@@ -1,0 +1,84 @@
+pid - this
+
+ppid - parinte
+
+foreground ls a*.doc
+background ls a*.doc& // consola  e libera pentru alte procese
+listare procese ps -aux
+    -a - aditionale(spatiu, mem, cale)
+    -x - procese fara terminali
+
+inchidere proces
+daca e background, trebuie pid: ps /top / htop, kill pid
+
+stari: start, ready(pregatit de exec), running, waiting, finished
+, zombie nu mai are resurse alocate, orphan(procesu tata- killed), 
+suspendarea unui proces: suspendare proces.
+=========================================
+fork()
+
+returns its new pid
+
+exec()
+intrerupe programul
+daca functioneaza nu face resume
+//scrieti un program care nu suprascrie procesul curent, dar sa afiseze after exec.
+
+getpid()
+
+
+geppid()
+
+==================
+semnale
+    evenimente hardware
+    evenimente SO  
+    evenimente user
+void sighandelr( in sig)
+{
+    //do smth
+    fflush(stdou);
+}
+
+int main()
+{
+    signal(SIGUSR2, sighandler);
+    while(1) {}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
