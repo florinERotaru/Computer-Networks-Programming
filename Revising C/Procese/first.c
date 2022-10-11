@@ -4,7 +4,7 @@
 #include <sys/types.h>
        #include <sys/wait.h>
 
-char *const param[]={"/user/bin/ls", "-s", "-l", (char*)NULL};
+char* const param[]={"/user/bin/ls", "-s", "-l", (char*)NULL};
 int main()
 {
     int pid=fork();
